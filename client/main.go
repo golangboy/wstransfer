@@ -43,7 +43,7 @@ func handleConn(conn net.Conn) {
 
 }
 func main() {
-	serverAddr = flag.String("addr", "localhost:8080", "server address")
+	serverAddr = flag.String("addr", "localhost:80", "server address")
 	listenAddr = flag.String("listen", "localhost:8081", "listen address")
 	flag.Parse()
 	listener, err := net.Listen("tcp", *listenAddr)
